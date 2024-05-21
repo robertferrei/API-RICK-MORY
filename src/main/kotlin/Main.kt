@@ -1,5 +1,6 @@
 package org.example
 
+import org.example.rick.mory.modelo.Episode
 import org.example.rick.mory.modelo.InfoPersonagem
 import org.example.rick.mory.modelo.Personagem
 import org.example.rick.mory.servicos.ConsumoApi
@@ -24,6 +25,23 @@ fun main() {
     }
     resultadoBusca.onFailure {
         println("personagem inexistente ")
+    }
+    //finalizando busca de informações de personagem
+
+    //inicio
+    println("deseja escolher algum episodio S/N")
+    val buscaEp = leitura.nextLine()
+
+    if(buscaEp.equals("s", ignoreCase = true)){
+        println("escolha o numero do episodio que deseja assistir:")
+        val ep = leitura.nextLine()
+        val episodio = buscaApi.buscaEpisode(ep)
+
+        val episode = Episode(episodio.name,episodio.url)
+        println(episode)
+
+    }else{
+        println("finalizando programa")
     }
 
 }
