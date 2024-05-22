@@ -1,8 +1,10 @@
 package org.example.rick.mory.servicos
 
 import com.google.gson.Gson
+import org.example.rick.mory.filtroBusca.FiltroResult
 import org.example.rick.mory.modelo.Episode
 import org.example.rick.mory.modelo.Personagem
+import java.io.ObjectInputFilter.Status
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -40,6 +42,23 @@ class ConsumoApi {
         println(json)
         val jsoon = Gson()
         val infoEpisode = jsoon.fromJson(json,Episode::class.java)
+        return  infoEpisode
+    }
+
+    fun buscaFiltro(species: String, status: String):FiltroResult{
+        val enderecoFiltro ="https://rickandmortyapi.com/api/character/?page=2&name=rick&species=$species&rick&status=$status"
+
+        val client: HttpClient = HttpClient.newHttpClient()  //requisition
+        val request = HttpRequest.newBuilder()
+            .uri(URI.create(enderecoFiltro))
+            .build()
+
+        val response = client //resposta
+            .send(request, BodyHandlers.ofString())
+        val json = response.body()
+        println(json)
+        val jsoon = Gson()
+        val infoEpisode = jsoon.fromJson(json,FiltroResult::class.java)
         return  infoEpisode
     }
 }

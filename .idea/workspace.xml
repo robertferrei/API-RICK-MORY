@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b23c385d-5d6c-459e-8d26-e4966d95542b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/rick/mory/modelo/Episode.kt" afterDir="false" />
+    <list default="true" id="b23c385d-5d6c-459e-8d26-e4966d95542b" name="Changes" comment="criando busca de episodios">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/rick/mory/filtroBusca/Filtro.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/rick/mory/filtroBusca/FiltroResult.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rick/mory/modelo/InfoAPi.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/rick/mory/servicos/ConsumoApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rick/mory/servicos/ConsumoApi.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,31 @@
       <option name="presentableId" value="Default" />
       <updated>1716246801099</updated>
     </task>
+    <task id="LOCAL-00001" summary="criando busca de episodios">
+      <option name="closed" value="true" />
+      <created>1716333047201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716333047201</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="criando busca de episodios" />
+    <option name="LAST_COMMIT_MESSAGE" value="criando busca de episodios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
